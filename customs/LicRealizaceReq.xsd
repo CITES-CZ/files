@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2021 (x64) (http://www.altova.com) by Radim Jäger (SYSNET s.r.o.) -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://service.cites.cz/LicRealizaceRequest/" xmlns:cds="http://www.cs.mfcr.cz/Schemas/CDS/Template" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://service.cites.cz/LicRealizaceRequest/" elementFormDefault="qualified">
+	<annotation>
+		<documentation>Report realizací licencí jejich vydavateli</documentation>
+	</annotation>
+	<element name="LicRealizaceReq" type="tns:SinWin_LicRealizaceReq_t">
+		<annotation>
+			<documentation>Report realizací licencí jejich vydavateli</documentation>
+		</annotation>
+	</element>
+	<complexType name="SinWin_LicRealizaceReq_t">
+		<sequence>
+			<element name="verze" type="xsd:string" fixed="2.1">
+				<annotation>
+					<documentation>Verze zprávy č. 2.1</documentation>
+				</annotation>
+			</element>
+			<element name="REQ" type="tns:SinWin_LicRealizaceReq_REQ_t" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>Záhlaví reportu</documentation>
+				</annotation>
+			</element>
+			<element name="Realizace" type="tns:SinWin_LicRealizaceReq_Realizace_t" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>Seznam pohybů při realizacích licencí za dané období</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="SinWin_LicRealizaceReq_REQ_t">
+		<sequence>
+			<element name="ReqId" type="tns:SinWin_LicRealizaceReq_REQ_ReqId_t" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>ID reportu</documentation>
+				</annotation>
+			</element>
+			<element name="DatumCasReportu" type="tns:SinWin_LicRealizaceReq_REQ_DatumCasReportu_t" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>Datum a čas odeslání reportu</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="SinWin_LicRealizaceReq_Realizace_t">
+		<sequence>
+			<element name="Pohyb" type="tns:SinWin_LicRealizaceReq_Pohyb_t" minOccurs="0" maxOccurs="unbounded">
+				<annotation>
+					<documentation>Jednotlivý pohyb na konkrétní licenci</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="SinWin_LicRealizaceReq_Pohyb_t">
+		<sequence>
+			<element name="ID" type="tns:SinWin_LicRealizaceReq_Pohyb_ID_t" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>Jednoznačný identifikátor pohybu</documentation>
+					<appinfo>
+						<cds:Info cds:SystemMetatype="Integer"/>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="MRN" type="tns:SinWin_LicRealizaceReq_Pohyb_MRN_t" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>Číslo JSD dokladu, v rámci kterého byl pohyb na odpisovém listě proveden</documentation>
+				</annotation>
+			</element>
+			<element name="CisPolozkyJSD" type="tns:SinWin_LicRealizaceReq_Pohyb_CisPolozkyJSD_t" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>Pořadové číslo položky JSD, které se pohyb na odpisovém listě týká</documentation>
+					<appinfo>
+						<cds:Info cds:SystemMetatype="String"/>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="DruhLicence" type="tns:SinWin_LicRealizaceReq_Pohyb_DruhLicence_t" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>Druh licence</documentation>
+					<appinfo>
+						<cds:Info cds:SystemMetatype="String"/>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="CisloLicence" type="tns:SinWin_LicRealizaceReq_Pohyb_CisloLicence_t" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>Číslo licence</documentation>
+					<appinfo>
+						<cds:Info cds:SystemMetatype="String"/>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="CisPolozkyLic" type="tns:SinWin_LicRealizaceReq_Pohyb_CisPolozkyLic_t" minOccurs="0" maxOccurs="1">
+				<annotation>
+					<documentation>Označení položky licence</documentation>
+					<appinfo>
+						<cds:Info cds:SystemMetatype="String"/>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="TypPohybu" type="tns:SinWin_LicRealizaceReq_Pohyb_TypPohybu_t" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>Typ pohybu - možné hodnoty: Odpis, Oprava, Storno</documentation>
+				</annotation>
+			</element>
+			<element name="DatumCasPohybu" type="tns:SinWin_LicRealizaceReq_Pohyb_DatumCasPohybu_t" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>Datum a čas, ke kterému byl pohyb proveden</documentation>
+					<appinfo>
+						<cds:Info cds:SystemMetatype="String"/>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="DatumCasEvidence" type="tns:SinWin_LicRealizaceReq_Pohyb_DatumCasEvidence_t" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>Datum a čas, ke kterému byl pohyb zaevidován v Single Window IC - zajišťuje historizaci pohybů</documentation>
+					<appinfo>
+						<cds:Info cds:SystemMetatype="DateTime"/>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="ZbozKod" type="tns:SinWin_LicRealizaceReq_Pohyb_ZbozKod_t" minOccurs="0" maxOccurs="1">
+				<annotation>
+					<documentation>Zbožový kód</documentation>
+					<appinfo>
+						<cds:Info cds:SystemMetatype="String"/>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="Mnozstvi" type="tns:SinWin_LicRealizaceReq_Pohyb_Mnozstvi_t" minOccurs="0" maxOccurs="1">
+				<annotation>
+					<documentation>Množství zboží v MJ</documentation>
+					<appinfo>
+						<cds:Info cds:SystemMetatype="Float"/>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="MJ" type="tns:SinWin_LicRealizaceReq_Pohyb_MJ_t" minOccurs="0" maxOccurs="1">
+				<annotation>
+					<documentation>Měrná jednotka</documentation>
+					<appinfo>
+						<cds:Info cds:SystemMetatype="String"/>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="DoplnujiciZaznam" type="tns:SinWin_LicRealizaceReq_Pohyb_DoplnujiciZaznam_t" minOccurs="0" maxOccurs="1">
+				<annotation>
+					<documentation>Doplňující záznamy k dokladu</documentation>
+					<appinfo>
+						<cds:Info cds:SystemMetatype="String"/>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="VysledekValidace" type="tns:SinWin_LicRealizaceReq_Pohyb_VysledekValidace_t" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>Výsledek validací prováděných na straně Single Window IC - v případě úspěchu "OK", jinak kód chyby.</documentation>
+					<appinfo>
+						<cds:Info cds:SystemMetatype="String"/>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="LicenceOverenaCU" type="tns:SinWin_LicRealizaceReq_Pohyb_LicenceOverenaCU_t" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>Byla licence ověřena v papírové podobě pracovníkem CÚ?</documentation>
+					<appinfo>
+						<cds:Info cds:SystemMetatype="String"/>
+					</appinfo>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<simpleType name="SinWin_LicRealizaceReq_REQ_ReqId_t">
+		<restriction base="xsd:string">
+			<maxLength value="50"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="SinWin_LicRealizaceReq_REQ_DatumCasReportu_t">
+		<annotation>
+			<documentation>Datum a čas ve formátu: "YYYYMMDD HHmmss"</documentation>
+		</annotation>
+		<restriction base="xsd:string">
+			<pattern value="[0-9]{8} [0-9]{6}"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="SinWin_LicRealizaceReq_Pohyb_ID_t">
+		<restriction base="xsd:integer"/>
+	</simpleType>
+	<simpleType name="SinWin_LicRealizaceReq_Pohyb_MRN_t">
+		<restriction base="xsd:string">
+			<minLength value="18"/>
+			<maxLength value="18"/>
+			<pattern value="[0-9]{2}[A-Z]{2}[A-Z0-9]{13}[0-9F]"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="SinWin_LicRealizaceReq_Pohyb_CisPolozkyJSD_t">
+		<restriction base="xsd:unsignedShort">
+			<maxInclusive value="999"/>
+			<minInclusive value="1"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="SinWin_LicRealizaceReq_Pohyb_DruhLicence_t">
+		<restriction base="xsd:string">
+			<maxLength value="1"/>
+			<minLength value="1"/>
+			<pattern value="[A-Za-z0-9]"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="SinWin_LicRealizaceReq_Pohyb_CisloLicence_t">
+		<restriction base="xsd:string">
+			<maxLength value="50"/>
+			<pattern value="[A-Za-z0-9]"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="SinWin_LicRealizaceReq_Pohyb_CisPolozkyLic_t">
+		<restriction base="xsd:string">
+			<maxLength value="4"/>
+			<pattern value="[A-Za-z0-9]"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="SinWin_LicRealizaceReq_Pohyb_TypPohybu_t">
+		<restriction base="xsd:string">
+			<enumeration value="Odpis"/>
+			<enumeration value="Oprava"/>
+			<enumeration value="Storno"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="SinWin_LicRealizaceReq_Pohyb_DatumCasPohybu_t">
+		<annotation>
+			<documentation>Datum a čas ve formátu: "YYYYMMDD HHmmss"</documentation>
+		</annotation>
+		<restriction base="xsd:string">
+			<pattern value="[0-9]{8} [0-9]{6}"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="SinWin_LicRealizaceReq_Pohyb_DatumCasEvidence_t">
+		<annotation>
+			<documentation>Datum a čas ve formátu: "YYYYMMDD HHmmss"</documentation>
+		</annotation>
+		<restriction base="xsd:string">
+			<pattern value="[0-9]{8} [0-9]{6}"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="SinWin_LicRealizaceReq_Pohyb_ZbozKod_t">
+		<restriction base="xsd:string">
+			<maxLength value="10"/>
+			<pattern value="[A-Za-z0-9á-žÁ-Ž]"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="SinWin_LicRealizaceReq_Pohyb_Mnozstvi_t">
+		<restriction base="xsd:float">
+			<minInclusive value="0"/>
+			<maxInclusive value="999999999999"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="SinWin_LicRealizaceReq_Pohyb_MJ_t">
+		<restriction base="xsd:string">
+			<maxLength value="10"/>
+			<pattern value="[A-Za-z0-9á-žÁ-Ž]"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="SinWin_LicRealizaceReq_Pohyb_DoplnujiciZaznam_t">
+		<restriction base="xsd:string">
+			<maxLength value="35"/>
+			<pattern value="[A-Za-z0-9á-žÁ-Ž]"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="SinWin_LicRealizaceReq_Pohyb_VysledekValidace_t">
+		<restriction base="xsd:string">
+			<maxLength value="250"/>
+			<minLength value="1"/>
+			<pattern value="[A-Za-z0-9á-žÁ-Ž]"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="SinWin_LicRealizaceReq_Pohyb_LicenceOverenaCU_t">
+		<restriction base="xsd:string">
+			<maxLength value="1"/>
+			<pattern value="[A-Za-z0-9]"/>
+		</restriction>
+	</simpleType>
+</schema>

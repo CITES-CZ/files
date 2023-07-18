@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://service.cites.cz/LicRealizaceResponse/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cds="http://www.cs.mfcr.cz/Schemas/CDS/Template" targetNamespace="http://service.cites.cz/LicRealizaceResponse/" elementFormDefault="qualified">
+	<annotation>
+		<documentation>Odpověď na zprávu LicRealizaceResp</documentation>
+	</annotation>
+	<element name="LicRealizaceResp" type="tns:SinWin_LicRealizaceResp_t">
+		<annotation>
+			<documentation>Odpověď na zprávu LicRealizaceResp</documentation>
+		</annotation>
+	</element>
+	<complexType name="SinWin_LicRealizaceResp_t">
+		<sequence>
+			<element name="verze" type="xsd:string" fixed="2.1">
+				<annotation>
+					<documentation>Verze zprávy č. 2.1</documentation>
+				</annotation>
+			</element>
+			<element name="REQ" type="tns:SinWin_LicRealizaceResp_REQ_t" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>Záhlaví reportu</documentation>
+				</annotation>
+			</element>
+			<element name="Realizace" type="tns:SinWin_LicRealizaceResp_Realizace_t" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>Seznam pohybů při realizacích licencí za dané období</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="SinWin_LicRealizaceResp_REQ_t">
+		<sequence>
+			<element name="ReqId" type="tns:SinWin_LicRealizaceResp_ReqId_t" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>ID odpovědi</documentation>
+				</annotation>
+			</element>
+			<element name="DatumCasOdpovedi" type="tns:SinWin_LicRealizaceResp_DatumCasOdpovedi_t" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>Datum a čas odeslání odpovědi</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="SinWin_LicRealizaceResp_Realizace_t">
+		<sequence>
+			<element name="Pohyb" type="tns:SinWin_LicRealizaceResp_Pohyb_t" minOccurs="0" maxOccurs="unbounded">
+				<annotation>
+					<documentation>Jednotlivý pohyb na konkrétní licenci</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="SinWin_LicRealizaceResp_Pohyb_t">
+		<sequence>
+			<element name="ID" type="tns:SinWin_LicRealizaceResp_Pohyb_ID_t" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>Jednoznačný identifikátor pohybu</documentation>
+					<appinfo>
+						<cds:Info cds:SystemMetatype="Integer"/>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="Errors" type="tns:ECS_LicRealizaceResp_Pohyb_Errors_t" minOccurs="0" maxOccurs="1">
+				<annotation>
+					<documentation>Seznam chyb vzniklých při validaci a následném zápisu do odpisového listu. Seznam obsahuje jak chyby systémového charakteru (např. nedostupnost zdroje), tak chyby vyplývající z obchodní logiky (např. překročení množství na licenci).</documentation>
+					<appinfo>
+						<cds:Info cds:IsGroup="1" cds:EN_Name="" cds:NA_Name="Seznam chyb" cds:MinOccurs="0" cds:MaxOccurs="1" cds:Cond="O"/>
+					</appinfo>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="ECS_LicRealizaceResp_Pohyb_Errors_t">
+		<sequence>
+			<element name="Error" type="tns:ECS_LicRealizaceResp_Pohyb_Error_t" minOccurs="1" maxOccurs="99">
+				<annotation>
+					<documentation>Jednotlivá chyba</documentation>
+					<appinfo>
+						<cds:Info cds:IsGroup="1" cds:Cond="O" cds:NA_Name="Chyba" cds:EN_Name="" cds:MinOccurs="1" cds:MaxOccurs="99"/>
+					</appinfo>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<complexType name="ECS_LicRealizaceResp_Pohyb_Error_t">
+		<sequence>
+			<element name="ErrCislo" type="tns:ErrCislo_t" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>Kód chyby</documentation>
+					<appinfo>
+						<cds:Info cds:Format="a14" cds:IsGroup="0" cds:Cond="R" cds:SystemMetatype="String" cds:NA_Name="Kód chyby" cds:EN_Name=""/>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="ErrTypChyby" type="tns:ErrTypChyby_t" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>Typ chyby</documentation>
+					<appinfo>
+						<cds:Info cds:Format="a1" cds:IsGroup="0" cds:Cond="R" cds:SystemMetatype="String" cds:NA_Name="Typ chyby" cds:EN_Name=""/>
+					</appinfo>
+				</annotation>
+			</element>
+			<element name="ErrTextZkr" type="tns:ErrTextZkr_t" minOccurs="0" maxOccurs="1">
+				<annotation>
+					<documentation>Zkrácený text chyby</documentation>
+					<appinfo>
+						<cds:Info cds:Format="a250" cds:IsGroup="0" cds:Cond="R" cds:SystemMetatype="String" cds:NA_Name="Zkrácený text chyby" cds:EN_Name=""/>
+					</appinfo>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<simpleType name="SinWin_LicRealizaceResp_ReqId_t">
+		<restriction base="xsd:string">
+			<maxLength value="50"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="SinWin_LicRealizaceResp_DatumCasReportu_t">
+		<annotation>
+			<documentation>Datum a čas ve formátu: "YYYYMMDD HHmmss"</documentation>
+		</annotation>
+		<restriction base="xsd:string">
+			<pattern value="[0-9]{8} [0-9]{6}"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="SinWin_LicRealizaceResp_DatumCasOdpovedi_t">
+		<annotation>
+			<documentation>Datum a čas ve formátu: "YYYYMMDD HHmmss"</documentation>
+		</annotation>
+		<restriction base="xsd:string">
+			<pattern value="[0-9]{8} [0-9]{6}"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="SinWin_LicRealizaceResp_Pohyb_ID_t">
+		<restriction base="xsd:integer"/>
+	</simpleType>
+	<simpleType name="ErrCislo_t">
+		<restriction base="xsd:string">
+			<minLength value="1"/>
+			<maxLength value="13"/>
+			<pattern value="[A-Za-z]{1,8}[-]{1}[0-9]{4}"/>
+		</restriction>
+	</simpleType>
+	<simpleType name="ErrTypChyby_t">
+		<restriction base="xsd:string">
+			<length value="1"/>
+			<enumeration value="E">
+				<annotation>
+					<documentation>Error - nepropustná chyba, pohyb nebyl zaevidován</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="W">
+				<annotation>
+					<documentation>Warning - propustná chyba, pohyb byl zaevidován, ale stojí za ruční kontrolu</documentation>
+				</annotation>
+			</enumeration>
+			<enumeration value="H">
+				<annotation>
+					<documentation>Hint - informativní hlášení, pohyb byl zaevidován</documentation>
+				</annotation>
+			</enumeration>
+		</restriction>
+	</simpleType>
+	<simpleType name="ErrTextZkr_t">
+		<restriction base="xsd:string">
+			<minLength value="0"/>
+			<maxLength value="250"/>
+		</restriction>
+	</simpleType>
+</schema>

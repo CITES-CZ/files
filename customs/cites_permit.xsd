@@ -1,0 +1,134 @@
+<!-- edited with XMLSpy v2021 (x64) (http://www.altova.com) by Radim Jäger (SYSNET s.r.o.) -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="urn:permit.ws.cites.cz" xmlns:intf="urn:permit.ws.cites.cz" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns2="urn:model.permit.ws.cites.cz" xmlns:tns3="urn:model.production.cites.cz" xmlns:tns4="urn:v02.eucites.tracesnt.ec.europa.eu" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:model.production.cites.cz">
+	<import namespace="http://schemas.xmlsoap.org/soap/encoding/" schemaLocation="http://schemas.xmlsoap.org/soap/encoding/"/>
+	<complexType name="TextType">
+		<sequence>
+			<element name="value" type="xsd:string" nillable="true"/>
+		</sequence>
+	</complexType>
+	<complexType name="PersonType">
+		<sequence>
+			<element name="id" type="tns3:TextType" nillable="true"/>
+			<element name="name" type="tns3:TextType" nillable="true"/>
+			<element name="address" type="tns3:TextType" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<element name="country" type="tns3:TextType" nillable="true"/>
+			<element name="description" type="tns3:TextType" nillable="true"/>
+		</sequence>
+	</complexType>
+	<complexType name="OrderType">
+		<sequence>
+			<element name="value" type="xsd:string" nillable="true"/>
+			<element name="numValue" type="xsd:int"/>
+		</sequence>
+	</complexType>
+	<complexType name="CustomsGoodsType">
+		<sequence>
+			<element name="quantity" type="xsd:double"/>
+			<element name="dead" type="xsd:double"/>
+			<element name="certificate" type="tns3:TextType" nillable="true"/>
+			<element name="type" type="tns3:TextType" nillable="true"/>
+			<element name="id" type="tns3:TextType" nillable="true"/>
+			<element name="date" type="xsd:dateTime" nillable="true"/>
+			<element name="comment" type="tns3:TextType" nillable="true"/>
+		</sequence>
+	</complexType>
+	<complexType name="GoodsType">
+		<sequence>
+			<element name="from" type="tns3:TextType" nillable="true"/>
+			<element name="id" type="tns3:TextType" nillable="true"/>
+			<element name="idPermit" type="tns3:TextType" nillable="true"/>
+			<element name="idno" type="tns3:TextType" nillable="true"/>
+			<element name="external" type="xsd:boolean"/>
+			<element name="order" type="tns3:OrderType" nillable="true"/>
+			<element name="species" type="tns3:TextType" nillable="true"/>
+			<element name="common" type="tns3:TextType" nillable="true"/>
+			<element name="commonCz" type="tns3:TextType" nillable="true"/>
+			<element name="commonEn" type="tns3:TextType" nillable="true"/>
+			<element name="goodsCode" type="tns3:TextType" nillable="true"/>
+			<element name="description" type="tns3:TextType" nillable="true"/>
+			<element name="goodsDescription" type="tns3:TextType" nillable="true"/>
+			<element name="goodsAdditional" type="tns3:TextType" nillable="true"/>
+			<element name="weight" type="xsd:double"/>
+			<element name="quantity" type="xsd:double"/>
+			<element name="units" type="tns3:TextType" nillable="true"/>
+			<element name="appendixCites" type="tns3:TextType" nillable="true"/>
+			<element name="annexEu" type="tns3:TextType" nillable="true"/>
+			<element name="origin" type="tns3:TextType" nillable="true"/>
+			<element name="purpose" type="tns3:TextType" nillable="true"/>
+			<element name="purposeValue" type="tns3:TextType" nillable="true"/>
+			<element name="countryOrigin" type="tns3:TextType" nillable="true"/>
+			<element name="permitOrigin" type="tns3:TextType" nillable="true"/>
+			<element name="dateOrigin" type="xsd:dateTime" nillable="true"/>
+			<element name="countryLast" type="tns3:TextType" nillable="true"/>
+			<element name="permitLast" type="tns3:TextType" nillable="true"/>
+			<element name="dateLast" type="xsd:dateTime" nillable="true"/>
+			<element name="dateExternal" type="xsd:dateTime" nillable="true"/>
+			<element name="permitExternal" type="tns3:TextType" nillable="true"/>
+			<element name="customs" type="tns3:CustomsGoodsType" nillable="true"/>
+			<element name="comment" type="tns3:TextType" nillable="true"/>
+			<element name="class411" type="tns3:TextType" nillable="true"/>
+			<element name="dateCreated" type="xsd:dateTime" nillable="true"/>
+			<element name="dateModified" type="xsd:dateTime" nillable="true"/>
+		</sequence>
+	</complexType>
+	<complexType name="PermitConditionsType">
+		<sequence>
+			<element name="annexPages" type="xsd:int"/>
+			<element name="permitCanceled" type="tns3:TextType" nillable="true"/>
+			<element name="maxLength" type="tns3:TextType" nillable="true"/>
+			<element name="photoPages" type="xsd:int"/>
+			<element name="plastron" type="tns3:TextType" nillable="true"/>
+			<element name="karapax" type="tns3:TextType" nillable="true"/>
+			<element name="other" type="tns3:TextType" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<element name="text" type="tns3:TextType" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<element name="transaction" type="tns3:TextType" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+		</sequence>
+	</complexType>
+	<complexType name="CustomsPermitType">
+		<sequence>
+			<element name="date" type="xsd:dateTime" nillable="true"/>
+			<element name="id" type="tns3:TextType" nillable="true"/>
+			<element name="type" type="tns3:TextType" nillable="true"/>
+			<element name="certificate" type="tns3:TextType" nillable="true"/>
+			<element name="dateReturned" type="xsd:dateTime" nillable="true"/>
+			<element name="comment" type="tns3:TextType" nillable="true"/>
+		</sequence>
+	</complexType>
+	<complexType name="CitesPermitType">
+		<sequence>
+			<element name="from" type="tns3:TextType" nillable="true"/>
+			<element name="external" type="xsd:boolean"/>
+			<element name="id" type="tns3:TextType" nillable="true"/>
+			<element name="token" type="tns3:TextType" nillable="true"/>
+			<element name="permitType" type="tns3:TextType" nillable="true"/>
+			<element name="used" type="tns3:TextType" nillable="true"/>
+			<element name="issuer" type="tns3:TextType" nillable="true"/>
+			<element name="dateIssued" type="xsd:dateTime" nillable="true"/>
+			<element name="idno" type="tns3:TextType" nillable="true"/>
+			<element name="idnoInternal" type="tns3:TextType" nillable="true"/>
+			<element name="idnoInternal2" type="tns3:TextType" nillable="true"/>
+			<element name="stamp" type="tns3:TextType" nillable="true"/>
+			<element name="exporter" type="tns3:PersonType" nillable="true"/>
+			<element name="dateValid" type="xsd:dateTime" nillable="true"/>
+			<element name="importer" type="tns3:PersonType" nillable="true"/>
+			<element name="countryExport" type="tns3:TextType" nillable="true"/>
+			<element name="countryImport" type="tns3:TextType" nillable="true"/>
+			<element name="authorizedLocation" type="tns3:TextType" nillable="true"/>
+			<element name="issuingAuthority" type="tns3:TextType" nillable="true"/>
+			<element name="goods" type="tns3:GoodsType" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+			<element name="conditions" type="tns3:PermitConditionsType" nillable="true"/>
+			<element name="documentation" type="tns3:TextType" nillable="true"/>
+			<element name="subjectPermitted" type="tns3:TextType" nillable="true"/>
+			<element name="consignmentNote" type="tns3:TextType" nillable="true"/>
+			<element name="issuingSignature" type="tns3:TextType" nillable="true"/>
+			<element name="issuingOfficer" type="tns3:TextType" nillable="true"/>
+			<element name="issuingPlace" type="tns3:TextType" nillable="true"/>
+			<element name="customs" type="tns3:CustomsPermitType" nillable="true"/>
+			<element name="comment" type="tns3:TextType" nillable="true"/>
+			<element name="purpose" type="tns3:TextType" nillable="true"/>
+			<element name="purposeValue" type="tns3:TextType" nillable="true"/>
+			<element name="dateCreated" type="xsd:dateTime" nillable="true"/>
+			<element name="dateModified" type="xsd:dateTime" nillable="true"/>
+		</sequence>
+	</complexType>
+</schema>

@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<soapenv:Body>
+		<GetDocumentResponse xmlns="urn:CitesDataExchange">
+			<CBFShip>
+				<ns1:SpecifiedExchangedDocumentContext xmlns:ns1="urn:un:unece:uncefact:data:draft:CBFShip:1">
+					<ns2:BusinessProcessSpecifiedDocumentContextParameter xmlns:ns2="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns2:Value>CITES PERMITTING</ns2:Value>
+						<ns2:SpecifiedDocumentVersion>
+							<ns2:ID>1</ns2:ID>
+							<ns2:IssueDateTime xsi:nil="true"/>
+						</ns2:SpecifiedDocumentVersion>
+					</ns2:BusinessProcessSpecifiedDocumentContextParameter>
+					<ns3:BIMSpecifiedDocumentContextParameter xmlns:ns3="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns3:ID>09A</ns3:ID>
+						<ns3:Value xsi:nil="true"/>
+						<ns3:SpecifiedDocumentVersion>
+							<ns3:ID>1</ns3:ID>
+							<ns3:IssueDateTime>2009-07-13T22:00:00.000Z</ns3:IssueDateTime>
+						</ns3:SpecifiedDocumentVersion>
+					</ns3:BIMSpecifiedDocumentContextParameter>
+				</ns1:SpecifiedExchangedDocumentContext>
+				<ns4:HeaderExchangedDocument xmlns:ns4="urn:un:unece:uncefact:data:draft:CBFShip:1">
+					<ns5:ID xmlns:ns5="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">23CZ034504</ns5:ID>
+					<ns6:TypeCode xmlns:ns6="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">E</ns6:TypeCode>
+					<ns7:IssueDateTime xmlns:ns7="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">2023-02-22T11:00:00.000Z</ns7:IssueDateTime>
+					<ns8:CopyIndicator xmlns:ns8="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">false</ns8:CopyIndicator>
+					<ns9:Purpose xmlns:ns9="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">T</ns9:Purpose>
+					<ns10:PurposeCode _value="T" xmlns:ns10="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1"/>
+					<ns11:EffectiveSpecifiedPeriod xmlns:ns11="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns11:StartDateTime>2023-02-22T11:00:00.000Z</ns11:StartDateTime>
+						<ns11:EndDateTime>2023-08-22T10:00:00.000Z</ns11:EndDateTime>
+					</ns11:EffectiveSpecifiedPeriod>
+					<ns12:IssueLogisticsLocation xsi:nil="true" xmlns:ns12="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1"/>
+					<ns13:FirstSignatoryDocumentAuthentication xmlns:ns13="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns13:TypeCode/>
+						<ns13:ID>2098148</ns13:ID>
+						<ns13:Statement>Ing. Jan Šíma</ns13:Statement>
+						<ns13:ProviderTradeParty>
+							<ns13:Name>Ministerstvo životního prostředí / Ministry of the Environment</ns13:Name>
+							<ns13:PostalTradeAddress>
+								<ns13:PostcodeCode>100 10</ns13:PostcodeCode>
+								<ns13:PostOfficeBox xsi:nil="true"/>
+								<ns13:StreetName>Vršovická 1442/65</ns13:StreetName>
+								<ns13:CityName>Praha 10</ns13:CityName>
+								<ns13:CountryIdentificationTradeCountry>
+									<ns13:ID>CZ</ns13:ID>
+									<ns13:SubordinateTradeCountrySubDivision xsi:nil="true"/>
+								</ns13:CountryIdentificationTradeCountry>
+							</ns13:PostalTradeAddress>
+							<ns13:SpecifiedRepresentativePerson>
+								<ns13:Name>Mgr. Zuzana Karásková</ns13:Name>
+							</ns13:SpecifiedRepresentativePerson>
+						</ns13:ProviderTradeParty>
+					</ns13:FirstSignatoryDocumentAuthentication>
+					<ns14:SecondSignatoryDocumentAuthentication xmlns:ns14="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns14:TypeCode>ENGLIC, Zbyněk
+Lipovec 39
+538 43 Třemošnice
+CZ</ns14:TypeCode>
+						<ns14:Statement xsi:nil="true"/>
+						<ns14:ProviderTradeParty>
+							<ns14:Name xsi:nil="true"/>
+							<ns14:PostalTradeAddress xsi:nil="true"/>
+							<ns14:SpecifiedRepresentativePerson xsi:nil="true"/>
+						</ns14:ProviderTradeParty>
+					</ns14:SecondSignatoryDocumentAuthentication>
+					<ns15:ThirdSignatoryDocumentAuthentication xmlns:ns15="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns15:TypeCode xsi:nil="true"/>
+						<ns15:Statement xsi:nil="true"/>
+						<ns15:ProviderTradeParty>
+							<ns15:Name>Ministerstvo životního prostředí / Ministry of the Environment</ns15:Name>
+							<ns15:PostalTradeAddress xsi:nil="true"/>
+							<ns15:SpecifiedRepresentativePerson xsi:nil="true"/>
+							<ns15:SpecifiedAuthoritativeSignatoryPerson>
+								<ns15:Name>Ing. Jan Šíma</ns15:Name>
+							</ns15:SpecifiedAuthoritativeSignatoryPerson>
+						</ns15:ProviderTradeParty>
+					</ns15:ThirdSignatoryDocumentAuthentication>
+					<ns16:FourthSignatoryDocumentAuthentication xsi:nil="true" xmlns:ns16="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1"/>
+				</ns4:HeaderExchangedDocument>
+				<ns17:SpecifiedSupplyChainConsignment xmlns:ns17="urn:un:unece:uncefact:data:draft:CBFShip:1">
+					<ns18:ConsignorTradeParty xmlns:ns18="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns18:Name>ENGLIC, Zbyněk</ns18:Name>
+						<ns18:PostalTradeAddress>
+							<ns18:PostcodeCode>290 01</ns18:PostcodeCode>
+							<ns18:PostOfficeBox xsi:nil="true"/>
+							<ns18:StreetName>Růžová 120</ns18:StreetName>
+							<ns18:CityName>Poděbrady</ns18:CityName>
+							<ns18:CountryIdentificationTradeCountry>
+								<ns18:ID>CZ</ns18:ID>
+								<ns18:SubordinateTradeCountrySubDivision xsi:nil="true"/>
+							</ns18:CountryIdentificationTradeCountry>
+						</ns18:PostalTradeAddress>
+						<ns18:SpecifiedRepresentativePerson xsi:nil="true"/>
+					</ns18:ConsignorTradeParty>
+					<ns19:ConsigneeTradeParty xmlns:ns19="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns19:Name>Sky Bird Sales</ns19:Name>
+						<ns19:PostalTradeAddress>
+							<ns19:PostcodeCode/>
+							<ns19:PostOfficeBox xsi:nil="true"/>
+							<ns19:StreetName>Weaver Coving</ns19:StreetName>
+							<ns19:CityName>Northamptonshire NN128TD</ns19:CityName>
+							<ns19:CountryIdentificationTradeCountry>
+								<ns19:ID>GB</ns19:ID>
+								<ns19:SubordinateTradeCountrySubDivision xsi:nil="true"/>
+							</ns19:CountryIdentificationTradeCountry>
+						</ns19:PostalTradeAddress>
+						<ns19:SpecifiedRepresentativePerson xsi:nil="true"/>
+					</ns19:ConsigneeTradeParty>
+					<ns20:TransportContractReferencedDocument xsi:nil="true" xmlns:ns20="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1"/>
+					<ns21:IncludedSupplyChainConsignmentItem xmlns:ns21="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns21:ID>A</ns21:ID>
+						<ns21:OriginTradeCountry>
+							<ns21:ID>CZ</ns21:ID>
+							<ns21:SubordinateTradeCountrySubDivision xsi:nil="true"/>
+						</ns21:OriginTradeCountry>
+						<ns21:ExportTradeCountry xsi:nil="true"/>
+						<ns21:AssociatedReferencedDocument>
+							<ns21:IssueDateTime>2023-02-22T11:00:00.000Z</ns21:IssueDateTime>
+							<ns21:TypeCode>E</ns21:TypeCode>
+							<ns21:ID>23CZ034504</ns21:ID>
+							<ns21:EffectiveSpecifiedPeriod xsi:nil="true"/>
+						</ns21:AssociatedReferencedDocument>
+						<ns21:TransportLogisticsPackage>
+							<ns21:ItemQuantity unitCode="PCS">100.0</ns21:ItemQuantity>
+						</ns21:TransportLogisticsPackage>
+						<ns21:IncludedSupplyChainTradeLineItem>
+							<ns21:TypeCode>II</ns21:TypeCode>
+							<ns21:TypeExtensionCode>C</ns21:TypeExtensionCode>
+							<ns21:SpecifiedTradeProduct>
+								<ns21:SellerAssignedID xsi:nil="true"/>
+								<ns21:Description>odchov/ bred</ns21:Description>
+								<ns21:TypeCode>LIV</ns21:TypeCode>
+								<ns21:CommonName>Fischer's Lovebird</ns21:CommonName>
+								<ns21:ScientificName>Agapornis fischeri</ns21:ScientificName>
+							</ns21:SpecifiedTradeProduct>
+						</ns21:IncludedSupplyChainTradeLineItem>
+						<ns21:ApplicableCrossBorderGovernmentProcedure xsi:nil="true"/>
+					</ns21:IncludedSupplyChainConsignmentItem>
+					<ns22:IncludedSupplyChainConsignmentItem xmlns:ns22="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns22:ID>B</ns22:ID>
+						<ns22:OriginTradeCountry>
+							<ns22:ID>CZ</ns22:ID>
+							<ns22:SubordinateTradeCountrySubDivision xsi:nil="true"/>
+						</ns22:OriginTradeCountry>
+						<ns22:ExportTradeCountry xsi:nil="true"/>
+						<ns22:AssociatedReferencedDocument>
+							<ns22:IssueDateTime>2023-02-22T11:00:00.000Z</ns22:IssueDateTime>
+							<ns22:TypeCode>E</ns22:TypeCode>
+							<ns22:ID>23CZ034504</ns22:ID>
+							<ns22:EffectiveSpecifiedPeriod xsi:nil="true"/>
+						</ns22:AssociatedReferencedDocument>
+						<ns22:TransportLogisticsPackage>
+							<ns22:ItemQuantity unitCode="PCS">100.0</ns22:ItemQuantity>
+						</ns22:TransportLogisticsPackage>
+						<ns22:IncludedSupplyChainTradeLineItem>
+							<ns22:TypeCode>II</ns22:TypeCode>
+							<ns22:TypeExtensionCode>C</ns22:TypeExtensionCode>
+							<ns22:SpecifiedTradeProduct>
+								<ns22:SellerAssignedID xsi:nil="true"/>
+								<ns22:Description>odchov/ bred</ns22:Description>
+								<ns22:TypeCode>LIV</ns22:TypeCode>
+								<ns22:CommonName>Masked Lovebird</ns22:CommonName>
+								<ns22:ScientificName>Agapornis personatus</ns22:ScientificName>
+							</ns22:SpecifiedTradeProduct>
+						</ns22:IncludedSupplyChainTradeLineItem>
+						<ns22:ApplicableCrossBorderGovernmentProcedure xsi:nil="true"/>
+					</ns22:IncludedSupplyChainConsignmentItem>
+					<ns23:IncludedSupplyChainConsignmentItem xmlns:ns23="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns23:ID>C</ns23:ID>
+						<ns23:OriginTradeCountry>
+							<ns23:ID>CZ</ns23:ID>
+							<ns23:SubordinateTradeCountrySubDivision xsi:nil="true"/>
+						</ns23:OriginTradeCountry>
+						<ns23:ExportTradeCountry xsi:nil="true"/>
+						<ns23:AssociatedReferencedDocument>
+							<ns23:IssueDateTime>2023-02-22T11:00:00.000Z</ns23:IssueDateTime>
+							<ns23:TypeCode>E</ns23:TypeCode>
+							<ns23:ID>23CZ034504</ns23:ID>
+							<ns23:EffectiveSpecifiedPeriod xsi:nil="true"/>
+						</ns23:AssociatedReferencedDocument>
+						<ns23:TransportLogisticsPackage>
+							<ns23:ItemQuantity unitCode="PCS">60.0</ns23:ItemQuantity>
+						</ns23:TransportLogisticsPackage>
+						<ns23:IncludedSupplyChainTradeLineItem>
+							<ns23:TypeCode>II</ns23:TypeCode>
+							<ns23:TypeExtensionCode>C</ns23:TypeExtensionCode>
+							<ns23:SpecifiedTradeProduct>
+								<ns23:SellerAssignedID xsi:nil="true"/>
+								<ns23:Description>odchov/ bred</ns23:Description>
+								<ns23:TypeCode>LIV</ns23:TypeCode>
+								<ns23:CommonName>Red-rumped Parrot</ns23:CommonName>
+								<ns23:ScientificName>Psephotus haematonotus</ns23:ScientificName>
+							</ns23:SpecifiedTradeProduct>
+						</ns23:IncludedSupplyChainTradeLineItem>
+						<ns23:ApplicableCrossBorderGovernmentProcedure xsi:nil="true"/>
+					</ns23:IncludedSupplyChainConsignmentItem>
+					<ns24:IncludedSupplyChainConsignmentItem xmlns:ns24="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns24:ID>D</ns24:ID>
+						<ns24:OriginTradeCountry>
+							<ns24:ID>CZ</ns24:ID>
+							<ns24:SubordinateTradeCountrySubDivision xsi:nil="true"/>
+						</ns24:OriginTradeCountry>
+						<ns24:ExportTradeCountry xsi:nil="true"/>
+						<ns24:AssociatedReferencedDocument>
+							<ns24:IssueDateTime>2023-02-22T11:00:00.000Z</ns24:IssueDateTime>
+							<ns24:TypeCode>E</ns24:TypeCode>
+							<ns24:ID>23CZ034504</ns24:ID>
+							<ns24:EffectiveSpecifiedPeriod xsi:nil="true"/>
+						</ns24:AssociatedReferencedDocument>
+						<ns24:TransportLogisticsPackage>
+							<ns24:ItemQuantity unitCode="PCS">70.0</ns24:ItemQuantity>
+						</ns24:TransportLogisticsPackage>
+						<ns24:IncludedSupplyChainTradeLineItem>
+							<ns24:TypeCode>II</ns24:TypeCode>
+							<ns24:TypeExtensionCode>C</ns24:TypeExtensionCode>
+							<ns24:SpecifiedTradeProduct>
+								<ns24:SellerAssignedID xsi:nil="true"/>
+								<ns24:Description>odchov/ bred</ns24:Description>
+								<ns24:TypeCode>LIV</ns24:TypeCode>
+								<ns24:CommonName>Barred Parakeet</ns24:CommonName>
+								<ns24:ScientificName>Bolborhynchus lineola</ns24:ScientificName>
+							</ns24:SpecifiedTradeProduct>
+						</ns24:IncludedSupplyChainTradeLineItem>
+						<ns24:ApplicableCrossBorderGovernmentProcedure xsi:nil="true"/>
+					</ns24:IncludedSupplyChainConsignmentItem>
+					<ns25:IncludedSupplyChainConsignmentItem xmlns:ns25="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns25:ID>E</ns25:ID>
+						<ns25:OriginTradeCountry>
+							<ns25:ID>CZ</ns25:ID>
+							<ns25:SubordinateTradeCountrySubDivision xsi:nil="true"/>
+						</ns25:OriginTradeCountry>
+						<ns25:ExportTradeCountry xsi:nil="true"/>
+						<ns25:AssociatedReferencedDocument>
+							<ns25:IssueDateTime>2023-02-22T11:00:00.000Z</ns25:IssueDateTime>
+							<ns25:TypeCode>E</ns25:TypeCode>
+							<ns25:ID>23CZ034504</ns25:ID>
+							<ns25:EffectiveSpecifiedPeriod xsi:nil="true"/>
+						</ns25:AssociatedReferencedDocument>
+						<ns25:TransportLogisticsPackage>
+							<ns25:ItemQuantity unitCode="PCS">15.0</ns25:ItemQuantity>
+						</ns25:TransportLogisticsPackage>
+						<ns25:IncludedSupplyChainTradeLineItem>
+							<ns25:TypeCode>II</ns25:TypeCode>
+							<ns25:TypeExtensionCode>C</ns25:TypeExtensionCode>
+							<ns25:SpecifiedTradeProduct>
+								<ns25:SellerAssignedID xsi:nil="true"/>
+								<ns25:Description>odchov/ bred</ns25:Description>
+								<ns25:TypeCode>LIV</ns25:TypeCode>
+								<ns25:CommonName>Jandaya Conure</ns25:CommonName>
+								<ns25:ScientificName>Aratinga jandaya</ns25:ScientificName>
+							</ns25:SpecifiedTradeProduct>
+						</ns25:IncludedSupplyChainTradeLineItem>
+						<ns25:ApplicableCrossBorderGovernmentProcedure xsi:nil="true"/>
+					</ns25:IncludedSupplyChainConsignmentItem>
+					<ns26:IncludedSupplyChainConsignmentItem xmlns:ns26="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns26:ID>F</ns26:ID>
+						<ns26:OriginTradeCountry>
+							<ns26:ID>CZ</ns26:ID>
+							<ns26:SubordinateTradeCountrySubDivision xsi:nil="true"/>
+						</ns26:OriginTradeCountry>
+						<ns26:ExportTradeCountry xsi:nil="true"/>
+						<ns26:AssociatedReferencedDocument>
+							<ns26:IssueDateTime>2023-02-22T11:00:00.000Z</ns26:IssueDateTime>
+							<ns26:TypeCode>E</ns26:TypeCode>
+							<ns26:ID>23CZ034504</ns26:ID>
+							<ns26:EffectiveSpecifiedPeriod xsi:nil="true"/>
+						</ns26:AssociatedReferencedDocument>
+						<ns26:TransportLogisticsPackage>
+							<ns26:ItemQuantity unitCode="PCS">70.0</ns26:ItemQuantity>
+						</ns26:TransportLogisticsPackage>
+						<ns26:IncludedSupplyChainTradeLineItem>
+							<ns26:TypeCode>II</ns26:TypeCode>
+							<ns26:TypeExtensionCode>C</ns26:TypeExtensionCode>
+							<ns26:SpecifiedTradeProduct>
+								<ns26:SellerAssignedID xsi:nil="true"/>
+								<ns26:Description>odchov/ bred</ns26:Description>
+								<ns26:TypeCode>LIV</ns26:TypeCode>
+								<ns26:CommonName>Monk parakeet</ns26:CommonName>
+								<ns26:ScientificName>Myiopsitta monachus</ns26:ScientificName>
+							</ns26:SpecifiedTradeProduct>
+						</ns26:IncludedSupplyChainTradeLineItem>
+						<ns26:ApplicableCrossBorderGovernmentProcedure xsi:nil="true"/>
+					</ns26:IncludedSupplyChainConsignmentItem>
+					<ns27:IncludedSupplyChainConsignmentItem xmlns:ns27="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns27:ID>G</ns27:ID>
+						<ns27:OriginTradeCountry>
+							<ns27:ID>CZ</ns27:ID>
+							<ns27:SubordinateTradeCountrySubDivision xsi:nil="true"/>
+						</ns27:OriginTradeCountry>
+						<ns27:ExportTradeCountry xsi:nil="true"/>
+						<ns27:AssociatedReferencedDocument>
+							<ns27:IssueDateTime>2023-02-22T11:00:00.000Z</ns27:IssueDateTime>
+							<ns27:TypeCode>E</ns27:TypeCode>
+							<ns27:ID>23CZ034504</ns27:ID>
+							<ns27:EffectiveSpecifiedPeriod xsi:nil="true"/>
+						</ns27:AssociatedReferencedDocument>
+						<ns27:TransportLogisticsPackage>
+							<ns27:ItemQuantity unitCode="PCS">70.0</ns27:ItemQuantity>
+						</ns27:TransportLogisticsPackage>
+						<ns27:IncludedSupplyChainTradeLineItem>
+							<ns27:TypeCode>II</ns27:TypeCode>
+							<ns27:TypeExtensionCode>C</ns27:TypeExtensionCode>
+							<ns27:SpecifiedTradeProduct>
+								<ns27:SellerAssignedID xsi:nil="true"/>
+								<ns27:Description>odchov/ bred</ns27:Description>
+								<ns27:TypeCode>LIV</ns27:TypeCode>
+								<ns27:CommonName>Celestial Parrotlet</ns27:CommonName>
+								<ns27:ScientificName>Forpus coelestis</ns27:ScientificName>
+							</ns27:SpecifiedTradeProduct>
+						</ns27:IncludedSupplyChainTradeLineItem>
+						<ns27:ApplicableCrossBorderGovernmentProcedure xsi:nil="true"/>
+					</ns27:IncludedSupplyChainConsignmentItem>
+					<ns28:IncludedSupplyChainConsignmentItem xmlns:ns28="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns28:ID>H</ns28:ID>
+						<ns28:OriginTradeCountry>
+							<ns28:ID>CZ</ns28:ID>
+							<ns28:SubordinateTradeCountrySubDivision xsi:nil="true"/>
+						</ns28:OriginTradeCountry>
+						<ns28:ExportTradeCountry xsi:nil="true"/>
+						<ns28:AssociatedReferencedDocument>
+							<ns28:IssueDateTime>2023-02-22T11:00:00.000Z</ns28:IssueDateTime>
+							<ns28:TypeCode>E</ns28:TypeCode>
+							<ns28:ID>23CZ034504</ns28:ID>
+							<ns28:EffectiveSpecifiedPeriod xsi:nil="true"/>
+						</ns28:AssociatedReferencedDocument>
+						<ns28:TransportLogisticsPackage>
+							<ns28:ItemQuantity unitCode="PCS">40.0</ns28:ItemQuantity>
+						</ns28:TransportLogisticsPackage>
+						<ns28:IncludedSupplyChainTradeLineItem>
+							<ns28:TypeCode>II</ns28:TypeCode>
+							<ns28:TypeExtensionCode>C</ns28:TypeExtensionCode>
+							<ns28:SpecifiedTradeProduct>
+								<ns28:SellerAssignedID xsi:nil="true"/>
+								<ns28:Description>odchov/ bred</ns28:Description>
+								<ns28:TypeCode>LIV</ns28:TypeCode>
+								<ns28:CommonName>Alexandrine Parakeet</ns28:CommonName>
+								<ns28:ScientificName>Psittacula eupatria</ns28:ScientificName>
+							</ns28:SpecifiedTradeProduct>
+						</ns28:IncludedSupplyChainTradeLineItem>
+						<ns28:ApplicableCrossBorderGovernmentProcedure xsi:nil="true"/>
+					</ns28:IncludedSupplyChainConsignmentItem>
+					<ns29:IncludedSupplyChainConsignmentItem xmlns:ns29="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns29:ID>I</ns29:ID>
+						<ns29:OriginTradeCountry>
+							<ns29:ID>CZ</ns29:ID>
+							<ns29:SubordinateTradeCountrySubDivision xsi:nil="true"/>
+						</ns29:OriginTradeCountry>
+						<ns29:ExportTradeCountry xsi:nil="true"/>
+						<ns29:AssociatedReferencedDocument>
+							<ns29:IssueDateTime>2023-02-22T11:00:00.000Z</ns29:IssueDateTime>
+							<ns29:TypeCode>E</ns29:TypeCode>
+							<ns29:ID>23CZ034504</ns29:ID>
+							<ns29:EffectiveSpecifiedPeriod xsi:nil="true"/>
+						</ns29:AssociatedReferencedDocument>
+						<ns29:TransportLogisticsPackage>
+							<ns29:ItemQuantity unitCode="PCS">20.0</ns29:ItemQuantity>
+						</ns29:TransportLogisticsPackage>
+						<ns29:IncludedSupplyChainTradeLineItem>
+							<ns29:TypeCode>II</ns29:TypeCode>
+							<ns29:TypeExtensionCode>C</ns29:TypeExtensionCode>
+							<ns29:SpecifiedTradeProduct>
+								<ns29:SellerAssignedID xsi:nil="true"/>
+								<ns29:Description>odchov/ bred</ns29:Description>
+								<ns29:TypeCode>LIV</ns29:TypeCode>
+								<ns29:CommonName>Plum-headed Parakeet</ns29:CommonName>
+								<ns29:ScientificName>Psittacula cyanocephala</ns29:ScientificName>
+							</ns29:SpecifiedTradeProduct>
+						</ns29:IncludedSupplyChainTradeLineItem>
+						<ns29:ApplicableCrossBorderGovernmentProcedure xsi:nil="true"/>
+					</ns29:IncludedSupplyChainConsignmentItem>
+					<ns30:IncludedSupplyChainConsignmentItem xmlns:ns30="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns30:ID>J</ns30:ID>
+						<ns30:OriginTradeCountry>
+							<ns30:ID>CZ</ns30:ID>
+							<ns30:SubordinateTradeCountrySubDivision xsi:nil="true"/>
+						</ns30:OriginTradeCountry>
+						<ns30:ExportTradeCountry xsi:nil="true"/>
+						<ns30:AssociatedReferencedDocument>
+							<ns30:IssueDateTime>2023-02-22T11:00:00.000Z</ns30:IssueDateTime>
+							<ns30:TypeCode>E</ns30:TypeCode>
+							<ns30:ID>23CZ034504</ns30:ID>
+							<ns30:EffectiveSpecifiedPeriod xsi:nil="true"/>
+						</ns30:AssociatedReferencedDocument>
+						<ns30:TransportLogisticsPackage>
+							<ns30:ItemQuantity unitCode="PCS">40.0</ns30:ItemQuantity>
+						</ns30:TransportLogisticsPackage>
+						<ns30:IncludedSupplyChainTradeLineItem>
+							<ns30:TypeCode>II</ns30:TypeCode>
+							<ns30:TypeExtensionCode>C</ns30:TypeExtensionCode>
+							<ns30:SpecifiedTradeProduct>
+								<ns30:SellerAssignedID xsi:nil="true"/>
+								<ns30:Description>odchov/ bred</ns30:Description>
+								<ns30:TypeCode>LIV</ns30:TypeCode>
+								<ns30:CommonName>Derbyan Parakeet</ns30:CommonName>
+								<ns30:ScientificName>Psittacula derbiana</ns30:ScientificName>
+							</ns30:SpecifiedTradeProduct>
+						</ns30:IncludedSupplyChainTradeLineItem>
+						<ns30:ApplicableCrossBorderGovernmentProcedure xsi:nil="true"/>
+					</ns30:IncludedSupplyChainConsignmentItem>
+					<ns31:IncludedSupplyChainConsignmentItem xmlns:ns31="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns31:ID>K</ns31:ID>
+						<ns31:OriginTradeCountry>
+							<ns31:ID>CZ</ns31:ID>
+							<ns31:SubordinateTradeCountrySubDivision xsi:nil="true"/>
+						</ns31:OriginTradeCountry>
+						<ns31:ExportTradeCountry xsi:nil="true"/>
+						<ns31:AssociatedReferencedDocument>
+							<ns31:IssueDateTime>2023-02-22T11:00:00.000Z</ns31:IssueDateTime>
+							<ns31:TypeCode>E</ns31:TypeCode>
+							<ns31:ID>23CZ034504</ns31:ID>
+							<ns31:EffectiveSpecifiedPeriod xsi:nil="true"/>
+						</ns31:AssociatedReferencedDocument>
+						<ns31:TransportLogisticsPackage>
+							<ns31:ItemQuantity unitCode="PCS">100.0</ns31:ItemQuantity>
+						</ns31:TransportLogisticsPackage>
+						<ns31:IncludedSupplyChainTradeLineItem>
+							<ns31:TypeCode>II</ns31:TypeCode>
+							<ns31:TypeExtensionCode>C</ns31:TypeExtensionCode>
+							<ns31:SpecifiedTradeProduct>
+								<ns31:SellerAssignedID xsi:nil="true"/>
+								<ns31:Description>odchov/ bred</ns31:Description>
+								<ns31:TypeCode>LIV</ns31:TypeCode>
+								<ns31:CommonName>Yellow-fronted Parakeet</ns31:CommonName>
+								<ns31:ScientificName>Cyanoramphus auriceps</ns31:ScientificName>
+							</ns31:SpecifiedTradeProduct>
+						</ns31:IncludedSupplyChainTradeLineItem>
+						<ns31:ApplicableCrossBorderGovernmentProcedure xsi:nil="true"/>
+					</ns31:IncludedSupplyChainConsignmentItem>
+					<ns32:IncludedSupplyChainConsignmentItem xmlns:ns32="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns32:ID>L</ns32:ID>
+						<ns32:OriginTradeCountry>
+							<ns32:ID>CZ</ns32:ID>
+							<ns32:SubordinateTradeCountrySubDivision xsi:nil="true"/>
+						</ns32:OriginTradeCountry>
+						<ns32:ExportTradeCountry xsi:nil="true"/>
+						<ns32:AssociatedReferencedDocument>
+							<ns32:IssueDateTime>2023-02-22T11:00:00.000Z</ns32:IssueDateTime>
+							<ns32:TypeCode>E</ns32:TypeCode>
+							<ns32:ID>23CZ034504</ns32:ID>
+							<ns32:EffectiveSpecifiedPeriod xsi:nil="true"/>
+						</ns32:AssociatedReferencedDocument>
+						<ns32:TransportLogisticsPackage>
+							<ns32:ItemQuantity unitCode="PCS">15.0</ns32:ItemQuantity>
+						</ns32:TransportLogisticsPackage>
+						<ns32:IncludedSupplyChainTradeLineItem>
+							<ns32:TypeCode>II</ns32:TypeCode>
+							<ns32:TypeExtensionCode>C</ns32:TypeExtensionCode>
+							<ns32:SpecifiedTradeProduct>
+								<ns32:SellerAssignedID xsi:nil="true"/>
+								<ns32:Description>odchov/ bred</ns32:Description>
+								<ns32:TypeCode>LIV</ns32:TypeCode>
+								<ns32:CommonName>Patagonian Conure</ns32:CommonName>
+								<ns32:ScientificName>Cyanoliseus patagonus</ns32:ScientificName>
+							</ns32:SpecifiedTradeProduct>
+						</ns32:IncludedSupplyChainTradeLineItem>
+						<ns32:ApplicableCrossBorderGovernmentProcedure xsi:nil="true"/>
+					</ns32:IncludedSupplyChainConsignmentItem>
+					<ns33:IncludedSupplyChainConsignmentItem xmlns:ns33="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns33:ID>M</ns33:ID>
+						<ns33:OriginTradeCountry>
+							<ns33:ID>CZ</ns33:ID>
+							<ns33:SubordinateTradeCountrySubDivision xsi:nil="true"/>
+						</ns33:OriginTradeCountry>
+						<ns33:ExportTradeCountry xsi:nil="true"/>
+						<ns33:AssociatedReferencedDocument>
+							<ns33:IssueDateTime>2023-02-22T11:00:00.000Z</ns33:IssueDateTime>
+							<ns33:TypeCode>E</ns33:TypeCode>
+							<ns33:ID>23CZ034504</ns33:ID>
+							<ns33:EffectiveSpecifiedPeriod xsi:nil="true"/>
+						</ns33:AssociatedReferencedDocument>
+						<ns33:TransportLogisticsPackage>
+							<ns33:ItemQuantity unitCode="PCS">60.0</ns33:ItemQuantity>
+						</ns33:TransportLogisticsPackage>
+						<ns33:IncludedSupplyChainTradeLineItem>
+							<ns33:TypeCode>II</ns33:TypeCode>
+							<ns33:TypeExtensionCode>C</ns33:TypeExtensionCode>
+							<ns33:SpecifiedTradeProduct>
+								<ns33:SellerAssignedID xsi:nil="true"/>
+								<ns33:Description>odchov/ bred</ns33:Description>
+								<ns33:TypeCode>LIV</ns33:TypeCode>
+								<ns33:CommonName>Eastern Rosella</ns33:CommonName>
+								<ns33:ScientificName>Platycercus eximius</ns33:ScientificName>
+							</ns33:SpecifiedTradeProduct>
+						</ns33:IncludedSupplyChainTradeLineItem>
+						<ns33:ApplicableCrossBorderGovernmentProcedure xsi:nil="true"/>
+					</ns33:IncludedSupplyChainConsignmentItem>
+					<ns34:IncludedSupplyChainConsignmentItem xmlns:ns34="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns34:ID>N</ns34:ID>
+						<ns34:OriginTradeCountry>
+							<ns34:ID>CZ</ns34:ID>
+							<ns34:SubordinateTradeCountrySubDivision xsi:nil="true"/>
+						</ns34:OriginTradeCountry>
+						<ns34:ExportTradeCountry xsi:nil="true"/>
+						<ns34:AssociatedReferencedDocument>
+							<ns34:IssueDateTime>2023-02-22T11:00:00.000Z</ns34:IssueDateTime>
+							<ns34:TypeCode>E</ns34:TypeCode>
+							<ns34:ID>23CZ034504</ns34:ID>
+							<ns34:EffectiveSpecifiedPeriod xsi:nil="true"/>
+						</ns34:AssociatedReferencedDocument>
+						<ns34:TransportLogisticsPackage>
+							<ns34:ItemQuantity unitCode="PCS">30.0</ns34:ItemQuantity>
+						</ns34:TransportLogisticsPackage>
+						<ns34:IncludedSupplyChainTradeLineItem>
+							<ns34:TypeCode>II</ns34:TypeCode>
+							<ns34:TypeExtensionCode>C</ns34:TypeExtensionCode>
+							<ns34:SpecifiedTradeProduct>
+								<ns34:SellerAssignedID xsi:nil="true"/>
+								<ns34:Description>odchov/ bred</ns34:Description>
+								<ns34:TypeCode>LIV</ns34:TypeCode>
+								<ns34:CommonName>Crimson Rosella</ns34:CommonName>
+								<ns34:ScientificName>Platycercus elegans</ns34:ScientificName>
+							</ns34:SpecifiedTradeProduct>
+						</ns34:IncludedSupplyChainTradeLineItem>
+						<ns34:ApplicableCrossBorderGovernmentProcedure xsi:nil="true"/>
+					</ns34:IncludedSupplyChainConsignmentItem>
+					<ns35:IncludedSupplyChainConsignmentItem xmlns:ns35="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns35:ID>O</ns35:ID>
+						<ns35:OriginTradeCountry>
+							<ns35:ID>CZ</ns35:ID>
+							<ns35:SubordinateTradeCountrySubDivision xsi:nil="true"/>
+						</ns35:OriginTradeCountry>
+						<ns35:ExportTradeCountry xsi:nil="true"/>
+						<ns35:AssociatedReferencedDocument>
+							<ns35:IssueDateTime>2023-02-22T11:00:00.000Z</ns35:IssueDateTime>
+							<ns35:TypeCode>E</ns35:TypeCode>
+							<ns35:ID>23CZ034504</ns35:ID>
+							<ns35:EffectiveSpecifiedPeriod xsi:nil="true"/>
+						</ns35:AssociatedReferencedDocument>
+						<ns35:TransportLogisticsPackage>
+							<ns35:ItemQuantity unitCode="PCS">55.0</ns35:ItemQuantity>
+						</ns35:TransportLogisticsPackage>
+						<ns35:IncludedSupplyChainTradeLineItem>
+							<ns35:TypeCode>II</ns35:TypeCode>
+							<ns35:TypeExtensionCode>C</ns35:TypeExtensionCode>
+							<ns35:SpecifiedTradeProduct>
+								<ns35:SellerAssignedID xsi:nil="true"/>
+								<ns35:Description>odchov/ bred</ns35:Description>
+								<ns35:TypeCode>LIV</ns35:TypeCode>
+								<ns35:CommonName>Green-cheeked Conure</ns35:CommonName>
+								<ns35:ScientificName>Pyrrhura molinae</ns35:ScientificName>
+							</ns35:SpecifiedTradeProduct>
+						</ns35:IncludedSupplyChainTradeLineItem>
+						<ns35:ApplicableCrossBorderGovernmentProcedure xsi:nil="true"/>
+					</ns35:IncludedSupplyChainConsignmentItem>
+					<ns36:IncludedSupplyChainConsignmentItem xmlns:ns36="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns36:ID>P</ns36:ID>
+						<ns36:OriginTradeCountry>
+							<ns36:ID>CZ</ns36:ID>
+							<ns36:SubordinateTradeCountrySubDivision xsi:nil="true"/>
+						</ns36:OriginTradeCountry>
+						<ns36:ExportTradeCountry xsi:nil="true"/>
+						<ns36:AssociatedReferencedDocument>
+							<ns36:IssueDateTime>2023-02-22T11:00:00.000Z</ns36:IssueDateTime>
+							<ns36:TypeCode>E</ns36:TypeCode>
+							<ns36:ID>23CZ034504</ns36:ID>
+							<ns36:EffectiveSpecifiedPeriod xsi:nil="true"/>
+						</ns36:AssociatedReferencedDocument>
+						<ns36:TransportLogisticsPackage>
+							<ns36:ItemQuantity unitCode="PCS">10.0</ns36:ItemQuantity>
+						</ns36:TransportLogisticsPackage>
+						<ns36:IncludedSupplyChainTradeLineItem>
+							<ns36:TypeCode>II</ns36:TypeCode>
+							<ns36:TypeExtensionCode>C</ns36:TypeExtensionCode>
+							<ns36:SpecifiedTradeProduct>
+								<ns36:SellerAssignedID xsi:nil="true"/>
+								<ns36:Description>odchov/ bred</ns36:Description>
+								<ns36:TypeCode>LIV</ns36:TypeCode>
+								<ns36:CommonName>Sun Conure</ns36:CommonName>
+								<ns36:ScientificName>Aratinga solstitialis</ns36:ScientificName>
+							</ns36:SpecifiedTradeProduct>
+						</ns36:IncludedSupplyChainTradeLineItem>
+						<ns36:ApplicableCrossBorderGovernmentProcedure xsi:nil="true"/>
+					</ns36:IncludedSupplyChainConsignmentItem>
+					<ns37:IncludedSupplyChainConsignmentItem xmlns:ns37="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns37:ID>Q</ns37:ID>
+						<ns37:OriginTradeCountry>
+							<ns37:ID>CZ</ns37:ID>
+							<ns37:SubordinateTradeCountrySubDivision xsi:nil="true"/>
+						</ns37:OriginTradeCountry>
+						<ns37:ExportTradeCountry xsi:nil="true"/>
+						<ns37:AssociatedReferencedDocument>
+							<ns37:IssueDateTime>2023-02-22T11:00:00.000Z</ns37:IssueDateTime>
+							<ns37:TypeCode>E</ns37:TypeCode>
+							<ns37:ID>23CZ034504</ns37:ID>
+							<ns37:EffectiveSpecifiedPeriod xsi:nil="true"/>
+						</ns37:AssociatedReferencedDocument>
+						<ns37:TransportLogisticsPackage>
+							<ns37:ItemQuantity unitCode="PCS">15.0</ns37:ItemQuantity>
+						</ns37:TransportLogisticsPackage>
+						<ns37:IncludedSupplyChainTradeLineItem>
+							<ns37:TypeCode>II</ns37:TypeCode>
+							<ns37:TypeExtensionCode>C</ns37:TypeExtensionCode>
+							<ns37:SpecifiedTradeProduct>
+								<ns37:SellerAssignedID xsi:nil="true"/>
+								<ns37:Description>odchov/ bred</ns37:Description>
+								<ns37:TypeCode>LIV</ns37:TypeCode>
+								<ns37:CommonName>Regent Parrot</ns37:CommonName>
+								<ns37:ScientificName>Polytelis anthopeplus</ns37:ScientificName>
+							</ns37:SpecifiedTradeProduct>
+						</ns37:IncludedSupplyChainTradeLineItem>
+						<ns37:ApplicableCrossBorderGovernmentProcedure xsi:nil="true"/>
+					</ns37:IncludedSupplyChainConsignmentItem>
+					<ns38:IncludedSupplyChainConsignmentItem xmlns:ns38="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1">
+						<ns38:ID>R</ns38:ID>
+						<ns38:OriginTradeCountry>
+							<ns38:ID>CZ</ns38:ID>
+							<ns38:SubordinateTradeCountrySubDivision xsi:nil="true"/>
+						</ns38:OriginTradeCountry>
+						<ns38:ExportTradeCountry xsi:nil="true"/>
+						<ns38:AssociatedReferencedDocument>
+							<ns38:IssueDateTime>2023-02-22T11:00:00.000Z</ns38:IssueDateTime>
+							<ns38:TypeCode>E</ns38:TypeCode>
+							<ns38:ID>23CZ034504</ns38:ID>
+							<ns38:EffectiveSpecifiedPeriod xsi:nil="true"/>
+						</ns38:AssociatedReferencedDocument>
+						<ns38:TransportLogisticsPackage>
+							<ns38:ItemQuantity unitCode="PCS">15.0</ns38:ItemQuantity>
+						</ns38:TransportLogisticsPackage>
+						<ns38:IncludedSupplyChainTradeLineItem>
+							<ns38:TypeCode>II</ns38:TypeCode>
+							<ns38:TypeExtensionCode>C</ns38:TypeExtensionCode>
+							<ns38:SpecifiedTradeProduct>
+								<ns38:SellerAssignedID xsi:nil="true"/>
+								<ns38:Description>odchov/ bred</ns38:Description>
+								<ns38:TypeCode>LIV</ns38:TypeCode>
+								<ns38:CommonName>Superb Parrot</ns38:CommonName>
+								<ns38:ScientificName>Polytelis swainsonii</ns38:ScientificName>
+							</ns38:SpecifiedTradeProduct>
+						</ns38:IncludedSupplyChainTradeLineItem>
+						<ns38:ApplicableCrossBorderGovernmentProcedure xsi:nil="true"/>
+					</ns38:IncludedSupplyChainConsignmentItem>
+					<ns39:ImportTradeCountry xsi:nil="true" xmlns:ns39="urn:un:unece:uncefact:data:draft:ReusableAggregateBusinessInformationEntity:1"/>
+				</ns17:SpecifiedSupplyChainConsignment>
+			</CBFShip>
+		</GetDocumentResponse>
+	</soapenv:Body>
+</soapenv:Envelope>

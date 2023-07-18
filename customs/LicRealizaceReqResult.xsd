@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://service.cites.cz/LicRealizaceReqResult" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://service.cites.cz/LicRealizaceReqResult" elementFormDefault="qualified">
+	<annotation>
+		<documentation>Odpověď na reportovanou realizaci licencí</documentation>
+	</annotation>
+	<element name="LicRealizaceReqResult" type="tns:CitesType_LicRealizaceReqResult">
+		<annotation>
+			<documentation>Odpověď systému na požadavek zpracování realizované licence</documentation>
+		</annotation>
+	</element>
+	<complexType name="CitesType_LicRealizaceReqResult">
+		<sequence>
+			<element name="version" type="string" fixed="2.1">
+				<annotation>
+					<documentation>Verze zprávy č. 2.1</documentation>
+				</annotation>
+			</element>
+			<element name="requestId" type="string" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>ID předaného reportu (vrací se číslo podaného reportu)</documentation>
+				</annotation>
+			</element>
+			<element name="change" type="nonNegativeInteger" minOccurs="0" maxOccurs="1">
+				<annotation>
+					<documentation>Počet identifikovaných pohybů</documentation>
+				</annotation>
+			</element>
+			<element name="timeStampReceived" type="dateTime" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>časová značka přijetí reportu </documentation>
+				</annotation>
+			</element>
+			<element name="status" type="tns:CitesType_ReceivingStatus" minOccurs="1" maxOccurs="1">
+				<annotation>
+					<documentation>Stav přijetí reportu</documentation>
+				</annotation>
+			</element>
+			<element name="note" type="string" minOccurs="0" maxOccurs="unbounded">
+				<annotation>
+					<documentation>Poznámka ke přijetí reportu</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+	<simpleType name="CitesType_ReceivingStatus">
+		<restriction base="string">
+			<enumeration value="SUCCESS"/>
+			<enumeration value="FAILURE"/>
+			<enumeration value="WARNING"/>
+		</restriction>
+	</simpleType>
+</schema>

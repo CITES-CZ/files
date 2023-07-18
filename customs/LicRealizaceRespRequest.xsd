@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2021 (x64) (http://www.altova.com) by Radim Jäger (SYSNET s.r.o.) -->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://service.cites.cz/LicRealizaceRespRequest" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://service.cites.cz/LicRealizaceRespRequest" elementFormDefault="qualified">
+	<annotation>
+		<documentation>Požadavek na vydání zprávy LicRealizaceResp </documentation>
+	</annotation>
+	<element name="LicRealizaceRespRequest" type="tns:CitesType_ChangeProcessingRequest">
+		<annotation>
+			<documentation>Strukturovaný požadavek na vydání zprávy LicRealizaceResp</documentation>
+		</annotation>
+	</element>
+	<complexType name="CitesType_ChangeProcessingRequest">
+		<sequence>
+			<element name="fromDate" type="date" minOccurs="0" maxOccurs="1">
+				<annotation>
+					<documentation>Datum nejdříve zpracované změny ve výstupní frontě</documentation>
+				</annotation>
+			</element>
+			<element name="toDate" type="date" minOccurs="0" maxOccurs="1">
+				<annotation>
+					<documentation>Datum nejpozději zpracované změny ve výstupní frontě</documentation>
+				</annotation>
+			</element>
+			<element name="count" type="nonNegativeInteger" minOccurs="0" maxOccurs="1">
+				<annotation>
+					<documentation>Počet vrácených položek</documentation>
+				</annotation>
+			</element>
+		</sequence>
+	</complexType>
+</schema>
